@@ -1,11 +1,6 @@
-# Build a Docker image for the application using an Alpine Linux image
 FROM alpine:latest
-
-# Update the package repository
+WORKDIR /app
 RUN apk update
-
-# Copy the binary file from your host to your current location.
-COPY /bin/GuacAlert .
-
-# Command to run the executable
+COPY /bin/GuacAlert /app/GuacAlert
+RUN chmod +x /app/GuacAlert
 ENTRYPOINT ["./GuacAlert"]
