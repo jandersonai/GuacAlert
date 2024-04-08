@@ -23,7 +23,7 @@ The application requires the following environment variables:
 
 The latest image can be found here:
 
-```docker push jandersonai/guacalert:latest```
+```docker pull jandersonai/guacalert:latest```
 
 To run the Docker container, use the following command:
 
