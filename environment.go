@@ -1,18 +1,15 @@
 package main
 
 import (
-	"database/sql"
 	"os"
 )
 
 var (
-	listenPort = os.Getenv("LISTEN_PORT")
-	dbIP       = os.Getenv("DB_IP")
-	dbPort     = os.Getenv("DB_PORT")
-	dbUser     = os.Getenv("DB_USER")
-	dbPass     = os.Getenv("DB_PASS")
-	dbName     = os.Getenv("DB_NAME")
-	chatURL    = os.Getenv("CHAT_HOOK")
-	db         *sql.DB
-	queue      []string
+	listenPort     = os.Getenv("LISTEN_PORT")
+	guacURL        = os.Getenv("GUAC_URL")
+	guacUser       = os.Getenv("GUAC_USER")
+	guacPass       = os.Getenv("GUAC_PASS")
+	guacDatasource = os.Getenv("GUAC_DATASOURCE")
+	chatURL        = os.Getenv("CHAT_HOOK")
+	queue          []string
 )
