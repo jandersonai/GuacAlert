@@ -21,7 +21,9 @@ The application requires the following environment variables:
 
 ## Docker
 
-A Dockerfile is included for building a Docker image of the application. To build the Docker image, use the following command:
+The latest image can be found here:
+
+```docker push jandersonai/guacalert:latest```
 
 To run the Docker container, use the following command:
 
