@@ -1,6 +1,6 @@
 # GuacAlert
 
-GuacAlert is a Go application that monitors active connections in a Guacamole server and sends alerts to a Webhook when users connect or disconnect.
+GuacAlert is a Go application that monitors active connections in an Apache Guacamole server and sends alerts to a Webhook when users connect or disconnect.
 
 ## Features
 
