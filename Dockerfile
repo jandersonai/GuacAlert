@@ -5,7 +5,7 @@ FROM alpine:latest
 RUN apk update
 
 # Copy the binary file from your host to your current location.
-COPY /bin/GuacAlert_linux .
+COPY /bin/GuacAlert .
 
 # Command to run the executable
-ENTRYPOINT ["./GuacAlert_linux"]
+ENTRYPOINT ["./GuacAlert"]
